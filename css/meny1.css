@@ -8,11 +8,13 @@
     height: 100vh;
     width: 100vw;
     grid-gap: 0px   ;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 13% 87%;
+    grid-template-columns: 10% 30% 50% 10%;
+    grid-template-rows: 10% 35% 20% 35%;
     grid-template-areas: 
-        "he he"
-        "ar na"
+        "he he he he"
+        ". ar di ."
+        "nav ar di nah"
+        ". ar di ."
     ;
 }
 
@@ -27,10 +29,18 @@
     background: transparent;
     padding: 40px;
 }
-.nav{
-    grid-area: na;
+
+.navv{
+    grid-area: nav;
 }
 
+.navh{
+    grid-area: nah;
+}
+
+.div{
+    grid-area: di;
+}
 
 body{
     background-image: url();
