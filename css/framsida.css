@@ -8,32 +8,58 @@
     height: 100vh;
     width: 100vw;
     grid-gap: 0px   ;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 13% 87%;
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 88%;
     grid-template-areas: 
-        "he he"
-        "ar na"
+        "he"
+        "di"
     ;
+}
+
+.link1{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link2{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link3{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
 }
 
 
 .header{
     grid-area: he;
     background: black;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
 
-.article{
-    grid-area: ar;
+.div{
+    grid-area: di;
     background: transparent;
-    padding: 40px;
-}
-.nav{
-    grid-area: na;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 body{
-    background-image: url();
+    background-image: url(../img/japan-2014619_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

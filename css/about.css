@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+
+.gridwrapper {
+    display: grid;
+    
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "he"
+        "ar"
+    ;
+}
+
+h3{
+    color: white;
+    font-size: 35px;
+    font-family: 'EB Garamond', serif;
+}
+
+.header{
+    grid-area: he;
+    background: black;
+    padding-left: 35px;
+    padding-right: 70px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.article{
+    grid-area: ar;
+    background: black;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

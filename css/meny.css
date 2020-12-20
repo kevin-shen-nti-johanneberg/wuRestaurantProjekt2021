@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+}
+
+.gridwrapper {
+    display: grid;
+    
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 0px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "he di"
+        "ar di"
+    ;
+}
+
+h3{
+    color: white;
+    font-size: 35px;
+    font-family: 'EB Garamond', serif;
+}
+
+.header{
+    grid-area: he;
+    background: black;
+    padding-left: 35px;
+    padding-right: 70px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.article{
+    grid-area: ar;
+    background: black;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.div{
+    grid-area: di;
+    background: transparent;
+    background-image: url(../img/pexels-cottonbro-3298604.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
